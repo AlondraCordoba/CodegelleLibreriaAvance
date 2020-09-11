@@ -1,0 +1,89 @@
+Realizar una aplicación para simular un sistema de control de una librería
+
+clase libro
+    Título
+    Autor
+    
+
+    método para dar de alta libros nuevos
+    método para eliminar libros
+    método para modificar un libro
+    método para búsquedas
+
+
+    los métodos serán realizados mediante la propiedad ID
+
+    -------------------------------------------------------------------------------------------------------
+
+    Local Storage es un objeto, guarda información que permanecerá almacenada por tiempo indefinido o hasta que se decida limpiar los datos del navegador; sin importar que el navegador se cierre.
+    Permiten almacenar entre 5MB y 10MB de información; incluyendo texto y multimedia
+    La información está almacenada en la computadora del cliente y NO es enviada en cada petición del servidor, a diferencia de las cookies
+    Utilizan un número mínimo de peticiones al servidor para reducir el tráfico de la red
+    Previenen pérdidas de información cuando se desconecta de la red
+    La información es guardada por domino web (incluye todas las páginas del dominio)
+
+    -------------------------------------------------------------------------------------------------------
+                   
+                     LOCAL STORAGE 
+            - Nos permite almacenar datos que persisten sin importar que el navegador se cierre o que el equipo se apague.
+            - Los datos almacenados se identifican por medio de un Key(clave) y un valor (puede ser de cualquier tipo pero siempre lo permitira convertir a string.)
+            - Tiene un rango de almacenamiento de hasta 5MB o 10MB dependiendo el navegador.
+            - Almacena la ruta de los elementos multimedia.
+            - La información se almacena directamente en el navegador.
+            - A diferencia de las Cookies no se envia como peticion HTTP, estas son peticiones que se hacen al servidor.  
+            - Es persistente, es decir que la información va a estar ahi. 
+            - No elimina información de maner automatica. 
+
+     -------------------------------------------------------------------------------------------------------
+                   
+                     SESSION STORAGE
+            - Almacena información mientras la pestaña donde se esté utilizando siga abierta, una vez cerrada, la información se elimina.
+            - Elimina información de manera automatica.
+
+     -------------------------------------------------------------------------------------------------------
+    
+      0 1 2
+     [1,2,4] length = 3-1 ---- Para la ultima posicion
+
+     0 1 2 3 4
+     [1,2,4,5,6] length = 5 ---- 
+
+    Array de Numeros   [1,2,4]
+    Array de Strings   ['','','']
+    Array Boleano      [true, false, true]
+    Array Objetos, el cual tiene propiedades:
+    [nombre:'',apellido;'']
+     [{nombre:'',apellido:''}, {nombre:'',apellido:''}] --- Varios 
+
+                                         Object Persona
+                Encuestados [{nombre:'',apellido:''}, {nombre:'',apellido:''}, {nombre:'',apellido:''}, {nombre:'',apellido:''}, {nombre:'',apellido:''}]
+
+     -------------------------------------------------------------------------------------------------------
+     
+     JSON --- Array de objetos (llaves en las posiciones de un array)
+
+     -------------------------------------------------------------------------------------------------------
+    
+                                           Metodo trim (.trim)
+     Cortar los espacios vacios a la izquierda y derecha de un string
+     El método trim( ) elimina los espacios en blanco en ambos extremos del string. Los espacios en blanco en este contexto, son todos los caracteres sin contenido (espacio, tabulación, etc.) y todos los caracteres de nuevas lineas (LF,CR,etc.).
+     Esto para evitar guardar tantos caracteres ___ ahorrar espacio 
+
+     ------------------------------------------------------------------------------------------------------
+
+                                            Metodo push (push())
+       El método push() añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
+
+     ------------------------------------------------------------------------------------------------------
+      
+      - firstChild: Regresa el primer Hijo del elemento al que se aplica.
+
+      <tr> <a> </a> </tr>  tr.firstChild => <a> </a>
+         La salida sera el elemento enlace que se encuentra dentro de nuestro tr. 
+
+     ------------------------------------------------------------------------------------------------------
+     Vaciar LocalStorage
+     LocalStorage.clear();
+
+     Submit por defecto recarga la pagina o el navegador para evitar esta accion por defecto utilizaremos el metodo.
+     event.preventDefault()
