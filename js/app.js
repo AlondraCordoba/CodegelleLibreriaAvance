@@ -76,7 +76,7 @@ function PrepararLibro() {
 
 }
 
-function Acciones() {
+function Acciones(event) {
     //console.log(event.target.tagName);
     if (event.target.tagName === 'I' || event.target.tagName === 'BUTTON') {
 
