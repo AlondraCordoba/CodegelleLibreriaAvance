@@ -82,7 +82,7 @@ function Acciones(event) {
 
         // libro.eliminar(event.target.tagName)
         // Filtrar botones editar y eliminar
-        if (event.target.className.includes("btn-warning") || event.target.className.includes("fa-trash")) {
+        if (event.target.className.includes("btn-danger") || event.target.className.includes("fa-trash")) {
             libro.eliminar(event.target);
             Swal.fire({
                 position: 'center',
